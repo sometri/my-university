@@ -15,10 +15,9 @@ const loadHTML = (file, element) => {
     });
 };
 
-loadHTML('header.html', headerDiv);
-loadHTML('menu.html', menuDiv);
-loadHTML('slider.html', sliderDiv);
-loadHTML('gallery.html', galleryDiv);
-loadHTML('main.html', mainDiv);
-loadHTML('footer.html', footerDiv);
-
+loadHTML('../html/header.html', headerDiv);
+loadHTML('../html/menu.html', menuDiv);
+loadHTML('../html/slider.html', sliderDiv);
+loadHTML('../html/gallery.html', galleryDiv);
+loadHTML('../html/main.html', mainDiv);
+loadHTML('../html/footer.html', footerDiv);

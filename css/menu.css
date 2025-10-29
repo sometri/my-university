@@ -1,41 +1,68 @@
 @charset "utf-8";
 #menu {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
+
 #menu ul {
-    list-style-type: none;
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
+
 #menu ul li {
-    background-color: red;
-    float: left;
-    position: relative;
-    border: 0.5px solid white;
-    width: 120px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 4px;
+  background-color: red;
+  float: left;
+  position: relative;
+  border: 0.5px solid white;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 4px;
 }
+
 #menu ul li a {
-    display: block;
-    text-decoration: none;
-    color: yellow;
+  display: block;
+  text-decoration: none;
+  color: yellow;
 }
+
 #menu ul li a:hover {
-    background-color: aqua;
-    color: blue;
-    border-radius: 4px;
+  background-color: aqua;
+  color: blue;
+  border-radius: 4px;
 }
+
 #menu ul ul {
-    display: none;
-    position: absolute;
-    padding: 0; /* keep no space when hovering all ul */
+  display: none;
+  position: absolute;
+  padding: 0; /* Keep no space when hovering all ul */
 }
+
 #menu ul li:hover > ul {
-    display: block;
+  display: block;
 }
+
 #menu ul ul ul {
-    margin-left: 120px;
-    top: 0px;
+  margin-left: 120px;
+  top: 0px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #menu ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the items */
+  }
+
+  #menu ul li {
+    width: auto; /* Allow width to adjust */
+    margin: 5px; /* Add some spacing between the items */
+  }
+
+  #menu ul ul {
+    position: static; /* Change dropdown position */
+  }
 }
